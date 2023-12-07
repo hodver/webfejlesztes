@@ -3,7 +3,7 @@ A webfejlesztés tantárgy beadandója
 
 Az oldal készítőjének neve: Hodosi Veronika
 
-URL cím: https://github.com/hodver/webfejlesztes/main/index.html
+URL cím: https://hodver.github.io/webfejlesztes/
 
 Témaleírás: Egy kis ismertető és kedvcsináló Dél-Korea fövárosáról, Szöulról. Az oldal azoknak készült, akik érdeklődnek a keleti kultúrák iránt és/vagy el szeretnének menni Szöulba.
 
