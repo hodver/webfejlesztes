@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <link rel="icon" type="image/png" sizes="32x32" href="./kepek/favicon-32x32.png">
+    <link href="./style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="author" content="Hodosi Veronika">
+    <meta name="copyright" content="Oktatási célokra">
+    <meta name="description" content="Szöul ismertető és kedvcsináló">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szöul</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap" rel="stylesheet">
+    <style>h1{font-family: 'Noto Serif KR';}</style>
+</head>
+<body>
+    <header> 
+        <h1>서울</h1>
+    </header>
+    <div class="menu">
+        <nav>
+            <hr class="vonal">
+            <ul>
+                <li><a href="./index.html">Ismertető</a></li>
+                <li><a href="./latnivalok.html">Látnivalók</a></li>
+                <li><a href="./tanacsok.html">Tanácsok</a></li>
+                <li id="current"><a href="#">Kvíz</a></li>
+            </ul>
+            <hr class="masikvonal">
+        </nav>
+    </div>
+    <article class="masikossz">
+        <header>
+            <h2 class="masikcim">Mennyire ismered Dél-Koreát/Szöult?</h2>
+        </header>
+        <section> 
+            <form action="#" id="myform">
+                <h3>Melyik a dél-koreai zászló?</h3>
+                <div id="tabla">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="elsoz"><img src="kepek/u515w24a22771.jpg" alt="rossz"></label>
+                            <input type="radio" name="zaszlo" id="elsoz" value="nem">
+                        </td>
+                        <td>
+                            <label for="masodikz"><img src="kepek/Flag_of_South_Korea_helyes.png" alt="jo"></label>
+                            <input type="radio" name="zaszlo" id="masodikz" value="igen">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="harmadikz"><img src="kepek/2x3-north-korea-flag-image__84805.jpg" alt="rossz"></label>
+                            <input type="radio" name="zaszlo" id="harmadikz" value="nem">
+                        </td>
+                        <td>
+                            <label for="negyedikz"><img src="kepek/2xkmpvuw8aq81.jpg" alt="rossz"></label>
+                            <input type="radio" name="zaszlo" id="negyedikz" value="nem">
+                        </td>
+                    </tr>
+                </table>
+                </div>
+                <h3><label for="varos">Mi Dél-Koreának a fővárosa?</label></h3>
+                <p><input type="text" name="varos" id="varos"></p>
+                <h3><label for="lakos">Hány millió fő lakik Dél-Koreában?</label></h3>
+                <p><input type="number" name="lakos" min="0" id="lakos"></p>
+                <h3>Melyik NEM palota Szöulban?</h3>
+                <div class="select">
+                <select name="palota" id="palota">
+                    <option value="yes">Gyeongbokgung</option>
+                    <option value="yes">Changdeokgung</option>
+                    <option value="yes">Deoksugung</option>
+                    <option value="no">Hanganggung</option>
+                    <option value="yes">Gyeonghuigung</option>
+                </select>
+                </div>
+                <h3>Igaz vagy hamis: A Han folyó az egyetlen folyó ami átmegy Szöulon.</h3>
+                <p id="kozepre">
+                    <input type="radio" name="ih" value="igaz" id="igaz"><label for="igaz"><span class="meret">Igaz</span></label>
+                    <input type="radio" name="ih" value="hamis" id="hamis"><label for="hamis"><span class="meret">Hamis</span></label>
+                </p>
+                <h3>Melyik repterek tartoznak Szöulhoz?</h3>
+                <div class="select">
+                <select multiple name="repter" size="5" id="repter">
+                    <option value="gimpo">Gimpo</option>
+                    <option value="jeju">Jeju</option>
+                    <option value="incheon">Incheon</option>
+                    <option value="gimhae">Gimhae</option>
+                    <option value="daegu">Daegu</option>
+                </select>
+                </div>
+                <h3><label for="hegy">Hány hegy veszi körbe Szöult?</label></h3>
+                <p><input type="number" name="hegy" max="10" min="0" id="hegy"></p>
+                <h3>Ezek közül melyek helyezkednek el Szöulban?</h3>
+                <div class="select">
+                <select multiple name="hegyek" size="5" id="hegyek">
+                    <option value="bugaksan">Bugaksan</option>
+                    <option value="inwangsan">Inwangsan</option>
+                    <option value="naksan">Naksan</option>
+                    <option value="hansan">Hansan</option>
+                    <option value="namsan">Namsan</option>
+                </select>
+                </div>
+                <div id="buttons">
+                    <input type="button" value="Ellenőrzés" id="btn" class="button">
+                    <input type="reset" value="Újrakezdés" class="button">
+                </div>
+            </form>
+        </section>
+    </article>
+    <footer> 
+        Kizárólag oktatási célokat szolgál ¤ Hodosi Veronika 2023.
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>

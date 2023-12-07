@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <link rel="icon" type="image/png" sizes="32x32" href="./kepek/favicon-32x32.png">
+    <link href="./style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="author" content="Hodosi Veronika">
+    <meta name="copyright" content="Oktatási célokra">
+    <meta name="description" content="Szöul ismertető és kedvcsináló">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szöul</title>
+    <script src="./jquery-3.7.1.js"></script>
+    <script src="./jquery-validation-1.19.5/dist/jquery.validate.js"></script>
+    <script src="./galleria-1.6.1/dist/galleria.js"></script>
+    <script src="./galleria-1.6.1/src/themes/classic/galleria.classic.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#kepek').galleria({
+                height: 500
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#myform").validate({
+                rules: {
+                    mail: {
+                        required:true,
+                        email:true
+                    },
+                    vnev: "required",
+                    knev: "required",
+                    kor: {
+                        required:true,
+                        min: 18
+                    },
+                    elfogad: {
+                        required: true
+                    },
+                },
+                messages: {
+                    mail: {
+                        required: "Kérlek add meg az e-mail címedet!",
+                        email:"Kérlek valós e-mail címet adj meg!",
+                    },
+                    vnev: "Írd be a vezetékneved!",
+                    knev: "Írd be a keresztneved!",
+                    kor:{
+                        required: "Add meg a korodat!",
+                        min: "Minimum 18 évesnek kell lenned!"
+                    },
+                    elfogad: "Kérlek fogadd el a feltételt! ",
+                },
+            });
+        });
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap" rel="stylesheet">
+    <style>h1{font-family: 'Noto Serif KR';}</style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+Symbols:wght@300&family=Noto+Serif+KR&family=Playfair+Display&display=swap" rel="stylesheet">
+    <style>aside{font-family: 'Montserrat';}</style>
+    <script>
+        function popup(){
+            if($("#myform").valid()){
+                alert(`Köszönjük szépen, hogy regisztráltál!`)
+            }  
+            else{
+                alert(`Kérlek töltsd ki a kötelező sorokat!`)
+            }
+        }
+    </script>
+</head>
+<body>
+    <header> 
+        <h1>서울</h1>
+    </header>
+    <div class="menu">
+        <nav>
+            <hr class="vonal">
+            <ul>
+                <li><a href="./index.html">Ismertető</a></li>
+                <li><a href="./latnivalok.html">Látnivalók</a></li>
+                <li id="current"><a href="#">Tanácsok</a></li>
+                <li><a href="./kviz.html">Kvíz</a></li>
+            </ul>
+        </nav>
+    </div>
+    <hr class="vonal">
+    <div id="flex-container">
+    <section>
+        <article class="masikossz">
+            <header>
+                <h2 class="masikcim">Legnépszerűbb egynapos kirándulások Szöultól</h2>
+            </header>
+            <section> 
+                <div class="masikszoveg">Ha nem elég Szöul, elmehetünk a metróval egy órányira távol Incheonba, ahol a kínai negyedben kóstolhatjuk meg a kínai és a koreai ételek fúzióját. Megnézhetjük az elválasztó vonal mentén fekvő DMZ-t, ahol átláthatunk az északi oldalra. Ha egy kis cukiságra vágyunk, Everland-ban megnézhetjük a koreaiak által imádott panda családot, míg a hullámvasútakon kiüvölthetjük a szívünket. Végül a legnépszerűbb és a legszebb egynapi kirándulás Szöul környékén a Nami sziget meglátogatása vagy a láma parkkal, Gangchon vasúti parkkal, Garden of Morning Calm-mal vagy a Petite France-cel együtt csomagolva.</div>
+                <div id="kepek" class="slides">
+                    <img src="./kepek/pexels-clive-kim-4447401.jpg" title="Incheon" alt="A legkönnyebben az 1-es metróval érhető el.">
+                    <img src="./kepek/black-bean-noodles-5097423_1280.jpg" title="Jajangmyeon" alt="A koreaiak által nevezett 'kínai' étel, ami nem is kínai.">
+                    <img src="./kepek/building-6851838_1280.jpg" title="DMZ" alt="Az egyik tárgyalóterem belseje, katonákkal védve.">
+                    <img src="./kepek/pexels-jason-alvarez-12344539.jpg" title="Everland" alt="Egy kicsit távol van a várostól, de megéri.">
+                    <img src="./kepek/michael-payne-jkBvXKwr4MY-unsplash.jpg" title="Pandák" alt="Koreában 3 panda született: a legidősebb, Fu Bao 2020-ban, míg az ikrek, Rui Bao és Huo Bao, 2023-ban születtek.">
+                    <img src="./kepek/daniel-bernard-7oberiN-Ocs-unsplash.jpg" title="Nami-sziget" alt="A leghangulatosabb fotókat ősszel tudjuk készíteni, amikor az egész sziget sárgában és pirosban pompázik.">
+                    <img src="./kepek/carl-kho-ePV5-_dgnEY-unsplash.jpg" title="Gangchon vasúti park" alt="Szép kilátás mentén pedálozunk.">
+                    <img src="./kepek/kelsey-dody-JRGrd18pmAE-unsplash.jpg" title="Garden of Morning Calm" alt="Egy nagy privát kert. A világ minden részéről inspirálódva a közepén ül egy ezer éves fa.">
+                    <img src="./kepek/priscilla-serneo-HNZSSHKoGIc-unsplash.jpg" title="Petite France" alt="A koreaiak imádják a Kis Herceget. Például Busan városában is lehet vele fotózkodni a hegyek közt."> 
+                </div>  
+                <hr class="vonal">
+            </section>
+        </article>
+        <article>
+            <header>
+                <h2>Három legfontosabb applikáció Szöulban</h2>
+            </header>
+            <section> 
+                <div class="szoveg">Tapasztalatból fordításra ajánlom a <span class="appok">Papago</span> nevű appot. A metro térkép legjobb megtekintéséhez a <span class="appok">KakaoMetro</span>-t javaslom. Végül mivel Dél-Koreában nem működik rendesen a Google Maps, ezért az alterníváját, a <span class="appok">Naver Map</span>-et ajánlom a sima közlekedéshez. Megjeleníti, hogy az egyes utak mennyibe fognak kerülni, és ha metróval közlekedünk, melyik kapunál kell fel/lemenni.</div>
+                <hr class="vonal">
+            </section>
+        </article>
+        <article class="masikossz">
+            <header>
+                <h2 class="masikcim">Tömegközlekedés</h2>
+            </header>
+            <section> 
+                <div class="masikszoveg">Nagyon fontos, hogy Szöulban csak T-Money kártyával lehet közlekedni. Ezeket a legközelebbi kisboltban meg lehet venni, és pénzzel feltölteni. A városban legfőképp a metró a leggyorsabb közlekedési forma, de van busz is. A metrók azért is jók, mert mindegyik megállóban van tiszta és ingyenes WC. Sokan a tömegközlekedésen alszanak, ezért fontos, hogy utazás alatt maradjunk csöndben és figyeljünk, hogy ne üljünk le a speciálisan foglalt helyekre (például terhes nőknek hagyott helyekre).</div>
+                <img src="./kepek/seoul-subway-5922899_1280.jpg" alt="Metró">
+                <hr class="vonal">
+            </section>
+        </article>
+        <article>
+            <header>
+                <h2>Pénznem</h2>
+            </header>
+            <section> 
+                <div class="szoveg">Dél-Koreában a hivatalos pénznem a won (원). Magyarországon nincsen wonba átváltó cég, ezért vagy eurót vagy dollárt vigyünk ki magunkkal, amit majd később vagy a reptéren vagy a városban átváltunk. Általában 3,33 won egyenlő egy forinttal, szóval a leggyorsabb átszámlálásokhoz osztjunk, illetve szorozzunk hárommal.</div>
+                <img src="./kepek/don-2861168_1280.jpg" alt="Pénz">
+                <hr class="vonal">
+            </section>
+        </article>
+        <article class="masikossz">
+            <header>
+                <h2 class="masikcim">Nyelv</h2>
+            </header>
+            <section> 
+                <div class="masikszoveg">Dél-Koreában a hivatalos nyelv a koreai nyelv (hangul), ami nem használ latin betűket, hanem egy speciális ábécét használ. De ne pánikoljunk! Szöulban minden angolul is ki van írva. Ha valami még sincsen kiírva angolul, akkor a felül ajánlott Papago applikációval egy gyors fotó készítésével lefordítja asz adott szöveget és Koreában a fiatal társaság nagy része érti az angolt, ezért bátran kérjünk segítséget! Alább van 10 kifejezés/szó, amik a legfontosabbak egy turistának:</div>
+                <hr class="vonal">
+                <ul id="hatter">
+                    <li>Hello! - 안녕하세요?</li>
+                    <li>WC - 화장실</li>
+                    <li>Mennyibe kerül? - 얼마나?</li>
+                    <li>Kijárat - 출구</li>
+                    <li>Köszönöm. - 감사합니다.</li>
+                    <li>Bejárat - 입구</li>
+                    <li>Tud angolul? - 영어를 할 수 있나요?</li>
+                    <li>Igen - 네</li>
+                    <li>Nem értem. - 이해할 수 없다.</li>
+                    <li>Nem - 아니요</li>
+                </ul>
+            </section>
+        </article>
+    </section>
+    <hr class="vonal">
+    <aside>
+        <header id="asidecim">
+            <h3>Szeretnél még több hasznos tippet kapni? Jelentkezz fel hírlapunkra!</h3>
+        </header>
+        <form action="#" novalidate id="myform">
+            <p><label for="mail">E-mail cím: </label><input type="email" name="mail" id="mail"></p>
+            <p><label for="vnev">Vezetéknév: </label><input type="text" name="vnev" id="vnev"></p>
+            <p><label for="knev">Keresztnév: </label><input type="text" name="knev" id="knev"></p>
+            <p><label for="kor">Életkor: </label><input type="number" name="kor" min="0" max="99" id="kor"></p>
+            <p>Miért érdekel téged Szöul? (nem kötelező)</p>
+                <p><input type="radio" name="miert" value="megnem" id="megnem"><label for="megnem">Még nem voltam Szöulban és el szeretnék menni. </label></p>
+                <p><input type="radio" name="miert" value="marvolt" id="marvolt"><label for="marvolt">Már voltam Szöulban, de újra el szeretnék menni. </label></p>
+                <p><input type="radio" name="miert" value="delkorea" id="delkorea"><label for="delkorea">Egész Dél-Korea érdekel. </label></p>
+                <label for="egyeb">Egyéb: </label><br><textarea name="egyeb" id="egyeb"></textarea>
+            <p>
+                <input type="checkbox" name="elfogad" id="elfogad"><label for="elfogad">Elfogadom, hogy a hírlevélre feliratkozva Szöulról promóciós e-maileket fogok kapni</label>
+            </p>
+            <div id="buttons">
+                <input type="button" value="Feliratkozás" class="button" onClick="popup()">
+                <input type="reset" value="Újrakezdés" class="button">
+            </div>
+        </form>
+    </aside>
+    </div>
+    <footer> 
+        Kizárólag oktatási célokat szolgál ¤ Hodosi Veronika 2023.
+    </footer>
+</body>
+</html>

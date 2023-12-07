@@ -1,0 +1,410 @@
+/*FORMÁZÁS*/
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #F4F1DE;
+    font-family: 'Consolas';
+}
+
+h1{
+    text-align: center;
+    color: #E07A5F;
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+    background-color: #F2CC8F;
+    font-size: 10em;
+}
+
+footer{
+    text-align: center;
+    background-color: #3D405B;
+    color: #F4F1DE;
+    line-height: 200%;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#current{
+    display: flex;
+    background-color: #3D405B;
+    width: 100vw;
+    text-align: center;
+    justify-content: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #81B29A;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+nav ul li a:hover{
+    display: flex;
+    color: #F2CC8F;
+    background-color: #E07A5F;
+    width: 100vw;
+    justify-content: center;
+    text-align: center;
+}
+
+.vonal{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    color: #3D405B;
+    width: 100vw;
+    height: 25px;
+    background-color: #3D405B;
+    border: none;
+}
+
+h2{
+    display: flex;
+    color: #E07A5F;
+    justify-content: center;
+    font-size: 55px;
+    margin: 0px 0px 10px 0px;
+    text-align: center;
+}
+
+.szoveg{
+    display: flex;
+    text-align: center;
+    font-size: 20px;
+}
+
+img{
+    display: flex;
+    width: 85vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+
+}
+
+section ul{
+    list-style-type: none;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    background-color: #F2CC8F;
+    margin-top: 0;
+}
+
+section ul li{
+    color: #3D405B;
+    margin: 2pt;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+section ul li a{
+    text-decoration: none;
+    color: #E07A5F;
+}
+
+section ul li a:hover{
+    font-size: 25px;
+}
+
+.slides-container{
+    margin: auto;
+}
+
+.appok{
+    display: contents;
+    font-weight: bolder;
+    color: #81B29A;
+}
+
+label.error{
+    color: red;
+    font-weight: bold;
+}
+
+aside{
+    display: flex;
+    font-size: 10pt;
+    margin: 0;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    background-color: #F2CC8F;
+    text-align: center;
+}
+
+#asidecim{
+    display: flex;
+    align-items: center;
+}
+
+video{
+    display: flex;
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vw;
+    background-color: #F2CC8F;
+}
+
+h3{
+    color: #3D405B;
+    font-size: 25px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.masikcim{
+    color: #81B29A;
+}
+
+.masikszoveg{
+    display: flex;
+    text-align: center;
+    font-size: 20px;
+    color: #3D405B;
+}
+
+.masikossz{
+    background-color: #F2CC8F;
+}
+
+#harmadikcim{
+    margin: 0;
+}
+
+#hatter{
+    background-color: #F4F1DE;
+}
+
+.meret{
+    font-size: 12pt;
+}
+
+/*TABLE*/
+
+table, tr{
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+td{
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tr, td{
+    padding: 10px;
+}
+
+#tabla img{
+    width: 40vw;
+}
+
+.masikvonal{
+    height: 0;
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+}
+
+/*ŰRLAP*/
+
+#btn{
+    margin-top: 10px;
+}
+
+.button {
+	box-shadow:inset 0px 1px 0px 0px #F4F1DE;
+	background:linear-gradient(to bottom, #F4F1DE 5%, #E07A5F 100%);
+	background-color:#F4F1DE;
+	border-radius:6px;
+	border:1px solid #E07A5F;
+	display: inline-block;
+	cursor:pointer;
+	color:#3D405B;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:10px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #F4F1DE;
+}
+.button:hover {
+	background:linear-gradient(to bottom, #E07A5F 5%, #F4F1DE 100%);
+	background-color:#E07A5F;
+}
+.button:active {
+	position:relative;
+	top:1px;
+}
+
+#buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+#mail, #vnev, #knev, #kor, #egyeb, #varos, #lakos, #hegy{
+    background-color: #F4F1DE;
+    color: #3D405B;
+    border: #3D405B solid 1pt;
+    cursor: pointer;
+    font-size: 12pt;
+}
+
+#varos, #hegy, #lakos{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#kozepre{
+    display: flex;
+    justify-content: center;
+}
+
+input[type="radio"]{
+    background-color: #F4F1DE;
+    border: #3D405B solid 1pt;
+    cursor: pointer;
+}
+
+.select{
+    display: flex;
+    justify-content: center;
+}
+
+#palota, #repter, #hegyek{
+    background-color: #F4F1DE;
+    color: #3D405B;
+    border: #3D405B solid 1pt;
+    cursor: pointer;
+    font-size: 12pt;
+}
+
+/*RESZPONZIVITÁS*/
+
+@media all and (min-width: 600px){
+    #asidecim{
+        position: absolute;
+    }
+
+    aside form{
+        margin-top: 50px;
+    }
+}
+
+@media all and (min-width: 768px){
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #current{
+        width: 24vw;
+        background-color: #F4F1DE;
+        justify-content: center;
+        text-decoration: underline;
+        text-decoration-color: #3D405B;
+        text-decoration-thickness: 5px;
+    }
+
+    nav ul li{
+        padding: 20px;
+        width: 24vw;
+    }
+
+    nav ul li a:hover{
+        width: 24vw;
+    }
+
+    .masikvonal{
+        display: flex;
+        padding: 0;
+        margin: 0;
+        color: #3D405B;
+        width: 100vw;
+        height: 25px;
+        background-color: #3D405B;
+        border: none;
+    }
+
+    video{
+        height: 700px;
+    }
+
+    h2, .masikcim{
+        font-size: 80px;
+    }
+
+    .szoveg, .masikszoveg{
+        font-size: 30px;
+    }
+
+    img{
+        display: flex;
+        height: 60vw;
+        width: auto;
+    }
+
+    aside{
+        display: flex;
+        justify-content: center;
+    }
+
+    aside form{
+        margin-top: 20px;
+    }
+
+    #tabla img{
+        height: 300px;
+        width: auto;
+    }
+
+    table{
+        display: flex;
+        justify-content: center;
+    }
+}
